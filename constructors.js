@@ -82,11 +82,13 @@ function Questions(text,options,correctAnswers){
 // ● submitAnswer: Takes a user's answer as a parameter, checks if the answer is
 // correct using the checkAnswer method of the Question class, and updates the
 
-function Qquiz(questions,currentQuestionIndex,score){
+function Quiz(questions,currentQuestionIndex,score){
     this.questions=question;
     this.currentQuestionIndex=currentQuestionIndex;
     this.score=score;
-    this.addQuestion=function(){
+    this.addQuestion=function(
+        
+    ){
     }
     this.nextQuestion=function(){
 
@@ -98,7 +100,8 @@ function Qquiz(questions,currentQuestionIndex,score){
 
     }
 };
- let quiz=new Questions()
+ let quiz=new Questions([{1:"Which is the tallest mountain in the world"},{2:"How many countries are in Africa"}]
+ [2],20)
  console.log({quiz})
  
 
